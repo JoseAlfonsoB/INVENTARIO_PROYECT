@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
-</head>
-<body class="container">
+  </head>
+  <body class="container">
+    <!-- ENCABEZADO DE LA PÁGINA -->
     <header class="navigator">
-        <div class="navigator-logo">
-            <img src="" alt="">
-            <h1>Empresa</h1>
-        </div>
-        <nav class="navigator-menu">
-            <ul class="navigator-menu-list">
-                <li class="navigator-menu-item navigator-menu-item-activate"><a href="#"></a>Listar</li>
-                <li class="navigator-menu-item"><a href="/agregar.html">Agregar</a></li>
-                <li class="navigator-menu-item"><a href="/aditar.html">Editar</a></li>
-            </ul>
-        </nav>
-    </header>
+      <div class="navigator-logo">
+        <img src="" alt="" />
+        <h1>Empresa</h1>
+      </div>
+      <!--   BARRA DE NAVEGACIÓN -->
+      <nav class="navigator-menu">
+        <ul class="navigator-menu-list">
+          <li class="navigator-menu-item navigator-menu-item-activate">
+            <a href="#"></a>Listar
+          </li>
+          <li class="navigator-menu-item">
+            <a href="agregar.html">Agregar</a>
+          </li>
+          <li class="navigator-menu-item"><a href="editar.html">Editar</a></li>
+        </ul>
+      </nav> <!-- FIN DE LA BARRA DE NAVEGACIÓN -->
+    </header> <!-- FIN DEL ENCABEZADO DE LA PÁGINA -->
     <main>
-        <form class="search-form">
-            <div>
-                <i>B</i>
-                <input type="text" placeholder="Busqueda...">
-            </div>
-        </form>
-
-        <section class="container-list">
-            <div class="card">
-                <h3 class="card-title">Lorem, impsum</h3>
-                <p class="card-stock">stock</p>
-                <div>
-                    <button class="card-button card-button_delete">Eliminar</button>
-                    <span class="card-precio">precio</span>
-                </div>
-            </div>
-        </section>
+      <h2 class="main-title">Inventario</h2>
+      <!-- FORMULARIO -->
+      <form class="search-form">
+        <div>
+          <i>B</i>
+          <input type="text" placeholder="Busqueda..." />
+        </div>
+      </form> <!-- FIN DEL FORMULARIO -->
+      <section class="container-list"> <!-- CONTENEDOR DE LA LISTA -->
+        <div class="card">
+          <h3 class="card-title">Lorem, impsum</h3>
+          <p class="card-stock">stock</p>
+          <div>
+            <button class="card-button card-button_delete">Eliminar</button>
+            <span class="card-precio">precio</span>
+          </div>
+        </div>
+      </section>  <!-- FIN DEL CONTENEDOR DE LA LISTA -->
     </main>
+    <!-- PIE DE PÁGINA -->
     <footer class="footer">
-        <p class="footer-text">Lorem ipsum dolor sit amet.</p>
+      <p class="footer-text">Lorem ipsum dolor sit amet.</p>
     </footer>
-</body>
+  </body>
 </html>
