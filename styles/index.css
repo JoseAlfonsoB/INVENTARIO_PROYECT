@@ -96,9 +96,11 @@ main {
     align-items: end;
     padding-right: 16px;
 }
+.search-form div {
+    border-bottom: 1px solid var(--gris);
+}
 
 .search-form div i{
-    border-bottom: 1px solid var(--gris);
     margin: 0;
     padding: 0;
 }
@@ -114,3 +116,63 @@ main {
     outline: none;
     border-bottom-width: 2px;
 }
+
+.container-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /** Para que los elementos se acomoden en la pantalla, en diferentes lineas. **/
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 24px;
+    border: 1px solid var(--gris);
+}
+
+.card {
+    /*border: 1px solid var(--gris);*/
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+    transition: all .5s case-in-out;
+    background-color: white;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--rosa-oscuro);
+    font-weight: bold;
+}
+
+.card-stock, .card-precio {
+    font-size: 0.9rem;
+    color: var(--gris);
+}
+
+.card div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px;
+    align-items: center;
+}
+
+.card-button {
+    background-color: transparent;
+    border: None;
+}
+
+.card-button:focus {
+    outline: none;
+}
+
