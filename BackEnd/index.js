@@ -46,6 +46,15 @@ app.get("/:n1/:n2", (req, res) => {
     }
 });
 
+
+// MÉTODO POST
+app.post("/", (req, res) => {
+    const {username, password} = req.body;
+    res.status(201).json({
+        username, password
+    });
+})
+
 // CORRIENDO EL SERVIDOR
 app.listen(PORT, () => {
   console.log("Server is running on port ${port}");
