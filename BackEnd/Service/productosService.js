@@ -21,7 +21,7 @@ class productosService {
             nombre, precio, stock
         };
         pruductos.push(nuevoProducto); // NOS PERMITE AGREGAR UN NUEVO ARREGLO
-        //return nuevoProducto;
+        return nuevoProducto;
     }
 
     update(object){
@@ -40,4 +40,4 @@ class productosService {
     }
 }
 
-MediaSourceHandle.export = (productosService)
+module.exports = {ProductosService: new productosService()}; // Exportamos la clase productosService
